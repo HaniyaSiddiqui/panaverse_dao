@@ -260,11 +260,11 @@ export default function Quarter4_web() {
                                 <Box color={'green.400'} px={2}><Icon as={ArrowRightIcon} /> </Box>
                                 <Stack align={'start'}>
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
-                                        As you probably know, the ICO ("Initial Coin Offering") industry has been booming, and it's completely reinventing the way new startups kickstart themselves. In fact, have a look at Wikipedia's list of highest crowdfunding projects
+                                        As you probably know, the ICO (&quot;Initial Coin Offering&quot;) industry has been booming, and it&apos;s completely reinventing the way new startups kickstart themselves. In fact, have a look at Wikipedia&apos;s list of highest crowdfunding projects
                                         {' '}   <Text as={'span'} color={'blue.400'} >
                                             <Link href='https://en.wikipedia.org/wiki/List_of_highest-funded_crowdfunding_projects'>
                                                 https://en.wikipedia.org/wiki/List_of_highest-funded_crowdfunding_projects </Link></Text>{' '},
-                                        and you'll notice that blockchain projects absolutely dominate the list.
+                                        and you&apos;ll notice that blockchain projects absolutely dominate the list.
                                     </Text>
                                 </Stack>
                             </HStack>
@@ -503,11 +503,11 @@ export default function Quarter4_web() {
 
 
                                     <Text mt={2} align={'start'} color={'black.400'} fontWeight={500}>
-                                        By creating a token and related contracts, you'll also learn how to handle money sent to your contracts, which should come in handy if you want to create some kind of paid decentralized service in the future
+                                        By creating a token and related contracts, you&apos;ll also learn how to handle money sent to your contracts, which should come in handy if you want to create some kind of paid decentralized service in the future
                                     </Text>
 
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
-                                        Therefore, for the sake of this chapter, let's imagine that our  Pako DApp uses its own coin – the Pako Token. We will create two contracts – one for the token itself and one for the token crowd sale (the ICO).
+                                        Therefore, for the sake of this chapter, let&apos;s imagine that our  Pako DApp uses its own coin – the Pako Token. We will create two contracts – one for the token itself and one for the token crowd sale (the ICO).
 
                                     </Text>
 
@@ -545,7 +545,7 @@ export default function Quarter4_web() {
 
 
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
-                                        Transfer 75% of the Tokens to the Crowd Sale contract at deployment time. i.e. Right after the contract is deployed, we want the token contract to send 75% of our token supply to it. While 25% remain in our personal "owner" account.
+                                        Transfer 75% of the Tokens to the Crowd Sale contract at deployment time. i.e. Right after the contract is deployed, we want the token contract to send 75% of our token supply to it. While 25% remain in our personal &quot;owner&quot; account.
                                     </Text>
 
 
@@ -568,7 +568,7 @@ export default function Quarter4_web() {
 
 
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
-                                        Also write extensive tests, for example we will simply send a transaction of 1 ETH from a random account to the contract. After the transaction, we should expect the account to have received Pako, while the contract's balance should have been reduced.
+                                        Also write extensive tests, for example we will simply send a transaction of 1 ETH from a random account to the contract. After the transaction, we should expect the account to have received Pako, while the contract&apos;s balance should have been reduced.
                                     </Text>
 
 
@@ -609,7 +609,7 @@ export default function Quarter4_web() {
 
 
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
-                                        Transfer 75% of the Tokens to the Crowd Sale contract at deployment time. i.e. Right after the contract is deployed, we want the token contract to send 75% of our token supply to it. While 25% remain in our personal "owner" account.
+                                        Transfer 75% of the Tokens to the Crowd Sale contract at deployment time. i.e. Right after the contract is deployed, we want the token contract to send 75% of our token supply to it. While 25% remain in our personal &quot;owner&quot; account.
                                     </Text>
 
 
@@ -632,7 +632,7 @@ export default function Quarter4_web() {
 
 
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
-                                        Also write extensive tests, for example we will simply send a transaction of 1 ETH from a random account to the contract. After the transaction, we should expect the account to have received Pako, while the contract's balance should have been reduced.
+                                        Also write extensive tests, for example we will simply send a transaction of 1 ETH from a random account to the contract. After the transaction, we should expect the account to have received Pako, while the contract&apos;s balance should have been reduced.
                                     </Text>
 
 
@@ -658,7 +658,7 @@ export default function Quarter4_web() {
 
 
                                     <Text mt={2} align={'start'} color={'black.400'} fontWeight={500}>
-                                        While it's always good to test your code, it's often more satisfying to see the results of your work wrapped in a nice UI. Let's see how we can deploy our contracts and get some Pako tokens into our MetaMask wallet!
+                                        While it&apos;s always good to test your code, it&apos;s often more satisfying to see the results of your work wrapped in a nice UI. Let&apos;s see how we can deploy our contracts and get some Pako tokens into our MetaMask wallet!
                                     </Text>
 
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
@@ -669,26 +669,26 @@ export default function Quarter4_web() {
 
 
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
-                                        When it's done, take note of what addresses the contracts were uploaded to and copy it!
+                                        When it&apos;s done, take note of what addresses the contracts were uploaded to and copy it!
                                     </Text>
 
 
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
-                                        Now head to MetaMask, and send a transaction of 1 ETH to the crowd sale contract address. If your MetaMask wallet doesn't have any ethers, remember that you can use any faucet.
+                                        Now head to MetaMask, and send a transaction of 1 ETH to the crowd sale contract address. If your MetaMask wallet doesn&apos;t have any ethers, remember that you can use any faucet.
                                     </Text>
 
 
 
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
-                                        After the transaction has been confirmed, you might be confused about why you can't see any tokens in your wallet. It turns out that you need to manually add the token address in MetaMask in order to "register" it – after all, there are so many tokens out there, there's no way MetaMask could list them all by default!
+                                        After the transaction has been confirmed, you might be confused about why you can&apos;t see any tokens in your wallet. It turns out that you need to manually add the token address in MetaMask in order to &quot;register&quot; it – after all, there are so many tokens out there, there&apos;s no way MetaMask could list them all by default!
                                     </Text>
 
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
-                                        To do this, open the side menu and click on the "Add token" button to get started:
+                                        To do this, open the side menu and click on the &quot;Add token&quot; button to get started:
                                     </Text>
 
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
-                                        Once you're on the token page, click on "Add custom token" and paste in the token contract's address in the address field</Text>
+                                        Once you&apos;re on the token page, click on &quot;Add custom token&quot; and paste in the token contract&apos;s address in the address field</Text>
 
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
                                         After confirming that you want to add the token, you should be able to see your Pako balance right next to your ETH balance in the wallet. How cool!
@@ -746,7 +746,7 @@ export default function Quarter4_web() {
                                     </Text>
 
                                     <Text align={'start'} color={'black.400'} fontWeight={500}>
-                                        Write a Typescript program to send Pako Token to some friend's address using Ethers.js.
+                                        Write a Typescript program to send Pako Token to some friend&apos;s address using Ethers.js.
 
                                     </Text>
 
