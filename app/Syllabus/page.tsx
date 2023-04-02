@@ -25,75 +25,75 @@ export default function Syllabus() {
     <ChakraProvider>
 
       <Header />
-      <Stack
-        maxW={'full'}
-        px={{ lg: 20 }}
-        overflow={'hidden'}>
-        <Box
-          height={'2xl'}
-          objectFit={'cover'}
-          backgroundPosition="center"
-          backgroundRepeat="no-repeat"
-          backgroundSize="cover"
-          backgroundImage={`url('./home/rm251-aum-13-g.jpg')`}>
-          {/* This is the block you need to change, to customize the caption */}
-          <Container textAlign={'center'} size="container.lg" height="600px" mt={{ lg: '-20px' }} position="relative">
-            <Stack
-              spacing={6}
-              w={'full'}
-              maxW={'lg'}
-              position="absolute"
-              top="50%"
-              transform="translate(0, -50%)">
-              <Heading textAlign={'center'} color={'gray.100'} fontSize={{
-                base: '5xl', md: '5xl', lg: '5xl'
-              }}>
-                Detailed Course Syllabus
-              </Heading>
-            </Stack>
-          </Container>
-        </Box>
+      <Container maxW={'full'} pt={'110'}  >
+        <Stack
+        >
+          <Box
+            h="85vh"
+            objectFit={'cover'}
+            backgroundPosition="center"
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+            backgroundImage={`url('./home/rm251-aum-13-g.jpg')`}
+            borderRadius={'25'}
+          >
+            {/* This is the block you need to change, to customize the caption */}
+            <Container textAlign={'center'} h="100vh" position="relative">
+              <Stack
+                spacing={6}
+                maxW={'lg'}
+                position="absolute"
+                top="50%"
+                transform="translate(0, -50%)">
+                <Heading textAlign={'center'} color={'gray.100'} fontSize={{
+                  base: '5xl', md: '5xl', lg: '5xl'
+                }}>
+                  Detailed Course Syllabus
+                </Heading>
+              </Stack>
+            </Container>
+          </Box>
 
-        <Tabs isFitted variant='enclosed'>
+          <Tabs isFitted variant='enclosed' px={{ lg: 20 }}>
+            <TabList mb='1em'  >
+              <Tab _selected={{ color: 'white', bg: 'pink.900' }} fontSize={'2xl'} >Quater I (Core)</Tab>
+              <Tab _selected={{ color: 'white', bg: 'pink.900' }} fontSize={'2xl'} >Quater II (Core)</Tab>
+              <Tab _selected={{ color: 'white', bg: 'pink.900' }} fontSize={'2xl'} >Quater III (Core)</Tab>
+              <Tab _selected={{ color: 'white', bg: 'pink.900' }} fontSize={'2xl'} >Quater IV </Tab>
+              <Tab _selected={{ color: 'white', bg: 'pink.900' }} fontSize={'2xl'} >Quater V </Tab>
+            </TabList>
 
-          <TabList mb='1em'  >
-            <Tab _selected={{ color: 'white', bg: 'pink.900' }} fontSize={'2xl'} >Quater I (Core)</Tab>
-            <Tab _selected={{ color: 'white', bg: 'pink.900' }} fontSize={'2xl'} >Quater II (Core)</Tab>
-            <Tab _selected={{ color: 'white', bg: 'pink.900' }} fontSize={'2xl'} >Quater III (Core)</Tab>
-            <Tab _selected={{ color: 'white', bg: 'pink.900' }} fontSize={'2xl'} >Quater IV </Tab>
-            <Tab _selected={{ color: 'white', bg: 'pink.900' }} fontSize={'2xl'} >Quater V </Tab>
-          </TabList>
+            <TabPanels>
+              {/* Quarter 1 */}
+              <TabPanel >
+                <><Quarter1 /></>
+              </TabPanel>
 
-          <TabPanels>
-            {/* Quarter 1 */}
-            <TabPanel >
-              <><Quarter1 /></>
-            </TabPanel>
+              {/* Quarter 2 */}
+              <TabPanel>
+                <> <Quarter2 /></>
+              </TabPanel>
 
-            {/* Quarter 2 */}
-            <TabPanel>
-              <> <Quarter2 /></>
-            </TabPanel>
+              {/* Quarter 3 */}
 
-            {/* Quarter 3 */}
+              <TabPanel>
+                <> <Quarter3 /></>
+              </TabPanel>
 
-            <TabPanel>
-              <> <Quarter3 /></>
-            </TabPanel>
+              {/* Quarter 4 */}
+              <TabPanel>
+                <> <Quarter4 /></>
+              </TabPanel>
 
-            {/* Quarter 4 */}
-            <TabPanel>
-              <> <Quarter4 /></>
-            </TabPanel>
+              {/* Quarter 5 */}
+              <TabPanel>
+                <> <Quarter5 /></>
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
 
-            {/* Quarter 5 */}
-            <TabPanel>
-              <> <Quarter5 /></>
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
-
-      </Stack>
+        </Stack>
+      </Container>
 
       {/* Add Footer */}
       < Footer />

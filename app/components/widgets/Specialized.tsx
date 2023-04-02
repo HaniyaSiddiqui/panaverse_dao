@@ -28,19 +28,21 @@ export default function Specialized() {
         >
             <Container maxW={'8xl'} py={16} as={Stack} spacing={12}>
                 <Stack spacing={0} align={'center'}  >
-                    <Heading color={'gray.300'} >Specialized Tracks</Heading>
+                    <Heading color={'gray.300'} fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>Specialized Tracks</Heading>
+
+
                     <Text color={'gray.200'}>After completing the first three quarters the participants will select one or more specializations consisting of two courses each</Text>
                 </Stack>
 
-                <Flex direction={{ base: 'column', md: 'row' }} align={'center'}>
+                <Flex direction={{ base: 'column', md: 'row', sm: 'row' }} align={'center'}>
+
                     {/* 1 */}
                     <Box
                         role={'group'}
                         p={6}
                         m={10}
                         mr={{ lg: 5 }}
-                        minW={'330px'}
-                        // maxW={'430px'}
+                        minW={'360px'}
                         w={'full'}
                         bg={useColorModeValue('white', 'gray.800')}
                         boxShadow={'2xl'}
@@ -80,7 +82,7 @@ export default function Specialized() {
                                 src={IMAGE}
                             />
                         </Box>
-                        <Stack pt={10} align={'center'}>
+                        <Stack pt={10} align={'left'}>
 
                             <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
                                 Web 3.0 (Blockchain) and Metaverse Specialization
@@ -105,7 +107,7 @@ export default function Specialized() {
                         p={6}
                         m={10}
                         mr={{ lg: 5 }}
-                        minW={'330px'}
+                        minW={'360px'}
                         w={'full'}
                         bg={useColorModeValue('white', 'gray.800')}
                         boxShadow={'2xl'}
@@ -114,6 +116,7 @@ export default function Specialized() {
                         zIndex={1} textAlign={'center'}>
                         <Box
                             rounded={'lg'}
+                            textAlign={'center'}
                             mt={-12}
                             pos={'relative'}
                             height={'230px'}
@@ -144,12 +147,10 @@ export default function Specialized() {
                                 src={IMAGE2}
                             />
                         </Box>
-                        <Stack pt={10} align={'center'}>
+                        <Stack pt={10} align={'left'}>
 
                             <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
                                 Artificial Intelligence (AI) and Deep Learning Specialization
-
-
                             </Heading>
 
                             <StackDivider
@@ -157,23 +158,30 @@ export default function Specialized() {
                             />
                             <Stack direction={'row'} align={'center'}>
                                 <Text fontWeight={500} fontSize={'xl'}> Quarter IV</Text>
-                                <Text fontWeight={500} align="left" fontSize={'sm'}> AI-351: Developing Planet-Scale Intelligent APIs and Python Programming</Text>
+                                <Text fontWeight={400} align="left" fontSize={'sm'}> AI-351: Developing Planet-Scale Intelligent APIs and Python Programming</Text>
                             </Stack>
 
-                            <Stack direction={'row'} align={'center'}>
-                                <Text as={'span'} fontWeight={500} fontSize={'xl'}> Quarter V</Text>
+
+
+                            {/* <Stack direction={'row'} align={'center'}>
+                                <Text fontWeight={500} fontSize={'xl'} align="left"> Quarter V</Text>
+                                <Text fontWeight={400} align="left" fontSize={'sm'}> AI-361: Deep Learning and<br /> MLOps</Text>
+                            </Stack> */}
+
+
+                            <Stack direction={'row'} align={'left'}>
+                                <Text as={'span'} fontWeight={500} fontSize={'xl'}> Quarter <br />V</Text>
                                 <Text as={'span'} align="left" fontWeight={400} fontSize={'sm'}> AI-361: Deep Learning and MLOps</Text>
                             </Stack>
                         </Stack>
                     </Box>
-
-
                     {/* 3 */}
                     <Box
                         role={'group'}
                         p={6}
                         m={10}
-                        minW={'330px'}
+                        mr={{ lg: 5 }}
+                        minW={'360px'}
                         w={'full'}
                         bg={useColorModeValue('white', 'gray.800')}
                         boxShadow={'2xl'}
@@ -235,16 +243,15 @@ export default function Specialized() {
                         </Stack>
                     </Box>
 
-
                 </Flex>
-                <Flex direction={{ base: 'column', md: 'row' }} align={'center'}>
+                <Flex direction={{ base: 'column', md: 'row', sm: 'row' }} align={'center'}>
                     {/* 4 */}
                     <Box
                         role={'group'}
                         p={6}
                         m={10}
                         mr={{ lg: 5 }}
-                        minW={'330px'}
+                        minW={'360px'}
                         w={'full'}
                         bg={useColorModeValue('white', 'gray.800')}
                         boxShadow={'2xl'}

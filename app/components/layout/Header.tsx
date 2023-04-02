@@ -39,14 +39,14 @@ export default function Home() {
             top="0"
             left="0"
             right="0"
-
+            zIndex={"999"}
 
         >
             <Container maxW={'full'} >
                 <Flex
                     bg={useColorModeValue('white', 'gray.800')}
                     color={useColorModeValue('gray.600', 'white')}
-                    minH={'100px'}
+                    minH={'80px'}
                     py={{ base: 2 }}
                     px={{ lg: 20 }}
                     borderBottom={1}
@@ -54,10 +54,9 @@ export default function Home() {
                     borderColor={useColorModeValue('gray.200', 'gray.900')}
                     align={'center'}
                     position="static"
-
                 >
                     <Flex
-                        flex={{ base: 1, md: 'auto' }}
+                        flex={{ base: 1 }}
                         ml={{ base: -2 }}
                         display={{ base: 'flex', md: 'none' }}>
                         <IconButton
@@ -69,20 +68,20 @@ export default function Home() {
                             aria-label={'Toggle Navigation'}
                         />
                     </Flex>
-                    <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
 
-                        <Image
-                            src="./logo.png"
-                            width="150"
-                            height="100"
-                            position="absolute"
-                            alt="logo"
+                    <Flex flex={{ base: 1 }} justify={{ base: 'start', md: 'start' }} >
 
-                            top={0}
-                        />
+                        <Link href="./" >
+                            <Image
+                                src="./logo.png"
+                                height={'80px'}
+                                position="absolute"
+                                alt="logo"
+                                top={0}
+                            />
+                        </Link>
 
-
-                        <Container display={{ base: 'none', md: 'flex' }} ml={500} >
+                        <Container display={{ base: 'none', md: 'flex' }} justifyContent="center">
                             <DesktopNav />
                         </Container>
                     </Flex>
@@ -91,24 +90,24 @@ export default function Home() {
                         flex={{ base: 1, md: 0 }}
                         justify={'flex-end'}
                         direction={'row'}
-                        spacing={6}>
+                        spacing={6}
+
+                    >
 
                         <Button
                             as={'a'}
-
-                            fontSize={'sm'}
-                            fontWeight={600}
+                            // fontSize={'sm'}
+                            // fontWeight={['600', '200', '200']}
                             color={'white'}
                             bg={'red.500'}
                             href={'https://www.piaic.org/'}
                             borderRadius='100'
                             bgGradient='linear(to-r, blue.900, pink.900)'
-
                             _hover={{
                                 bgGradient: 'linear(to-r, pink.500, blue.900)',
                             }}
                         >
-                            PIAIC WEBSITE
+                            APPLY NOW
                         </Button>
                     </Stack>
                 </Flex>
@@ -206,7 +205,7 @@ const MobileNav = () => {
     return (
         <Stack
             bg={useColorModeValue('white', 'gray.800')}
-            p={2}
+            p={{ lg: 2 }}
             display={{ md: 'none' }}>
             {NAV_ITEMS.map((navItem) => (
                 <MobileNavItem key={navItem.label} {...navItem} />
@@ -274,15 +273,15 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
     {
-        label: 'HOME',
+        label: 'Home',
         href: './',
     },
     {
-        label: 'VISION',
+        label: 'Vision',
         href: 'Vision',
     },
     {
-        label: 'SYLLABUS',
+        label: 'Syllabus',
         href: 'Syllabus',
     },
 
