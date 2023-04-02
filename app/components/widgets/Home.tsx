@@ -29,7 +29,7 @@ export default function Home() {
     useEffect(() => {
         const textContent = "Earn as you Learn Program";
         let currentIndex = 0;
-        let timeout = 0;
+        let timeout: any;
 
         const writeText = () => {
             if (currentIndex === textContent.length) {
